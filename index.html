@@ -14,100 +14,147 @@
         
         <!--Título-->
         <title>Main</title>
+
+        <style>
+            .nav-background {
+              background-image: url("./static/nav-bg.png");
+              background-size: cover;
+            }
+            .carousel > .carousel-inner > .carousel-item > img{
+                width: auto; /* Yeap you can change the width and height*/
+                height:500px;
+            }
+        </style>
     </head>
     <body style="background: #f4f4f4">
         <!--NavBar-->
-        <nav class="navbar navbar-expand">
-            <!--Logo-->
-            <a
-                class="navbar-brand"
-                href="home.html"
-            >
-                <img
-                class="logo w-25 mt-2 ms-5"
-                src= "./static/logo1.png    "
-                alt="logo"
-                style="width: 200px"
-                />
-            </a>
-
-            <!--Botões da NavBar-->
-            <div class="collapse navbar-collapse justify-content-end">
+        <nav class="navbar navbar-expand-md navbar-dark nav-background">
+            <div class="container-fluid">
+              <!--Logo-->
+              <a
+                  class="navbar-brand"
+                  href="index.html"
+              >
+                  <img
+                  class="logo w-25 mt-2 ms-5"
+                  src= "./static/logo1.png    "
+                  alt="logo"
+                  style="width: 200px"
+                  />
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
                 <ul class="navbar-nav">
-                <!--Botão de Dados-->
-                <li class="nav-item me-5">
-                    <button
-                    onclick="location.href='services.html'"
-                    class="logo nav-link"
-                    style="
-                        font-style: normal;
-                        font-weight: 500;
-                        font-size: 17px;
-                        line-height: 24px;
-                        color: #2296e5;
-                    "
-                    >
-                    Services
-                    </button>
-                </li>
-
-                <!--Botão do Relatório-->
-                <li class="nav-item me-5">
-                    <button
-                    onclick="location.href='relatorio.html'"
-                    class="logo nav-link"
-                    style="
-                        font-style: normal;
-                        font-weight: 500;
-                        font-size: 17px;
-                        line-height: 24px;
-                        color: #2296e5;
-                    "
-                    >
-                    Gallery
-                    </button>
-                </li>
-
-                <!--Botão do Perfil-->
-                <li class="nav-item me-5">
-                    <button
-                    onclick="location.href='profile.html'"
-                    class="logo nav-link"
-                    style="
-                        font-style: normal;
-                        font-weight: 500;
-                        font-size: 17px;
-                        line-height: 24px;
-                        color: #2296e5;
-                    "
-                    >
-                    Testimonials
-                    </button>
-                </li>
-
-                <!--Botão de Home-->
-                <li class="nav-item me-5">
-                    <button
-                    onclick="location.href='home.html'"
-                    class="logo nav-link"
-                    style="
-                        font-style: normal;
-                        font-weight: 500;
-                        font-size: 17px;
-                        line-height: 24px;
-                        color: #2296e5;
-                    "
-                    >
-                    About Us
-                    </button>
-                </li>
-                </ul>
+                  <!--Botão de Dados-->
+                  <li class="nav-item me-5">
+                      <button
+                      onclick="location.href='services.html'"
+                      class="logo nav-link"
+                      style="
+                          font-style: normal;
+                          font-weight: 500;
+                          font-size: 17px;
+                          line-height: 24px;
+                          color: #2296e5;
+                      "
+                      >
+                      Services
+                      </button>
+                  </li>
+  
+                  <!--Botão do Relatório-->
+                  <li class="nav-item me-5">
+                      <button
+                      onclick="location.href='relatorio.html'"
+                      class="logo nav-link"
+                      style="
+                          font-style: normal;
+                          font-weight: 500;
+                          font-size: 17px;
+                          line-height: 24px;
+                          color: #2296e5;
+                      "
+                      >
+                      Gallery
+                      </button>
+                  </li>
+  
+                  <!--Botão do Perfil-->
+                  <li class="nav-item me-5">
+                      <button
+                      onclick="location.href='profile.html'"
+                      class="logo nav-link"
+                      style="
+                          font-style: normal;
+                          font-weight: 500;
+                          font-size: 17px;
+                          line-height: 24px;
+                          color: #2296e5;
+                      "
+                      >
+                      Testimonials
+                      </button>
+                  </li>
+  
+                  <!--Botão de Home-->
+                  <li class="nav-item me-5">
+                      <button
+                      onclick="location.href='aboutus.html'"
+                      class="logo nav-link"
+                      style="
+                          font-style: normal;
+                          font-weight: 500;
+                          font-size: 17px;
+                          line-height: 24px;
+                          color: #2296e5;
+                      "
+                      >
+                      About Us
+                      </button>
+                  </li>
+                  </ul>
+              </div>
             </div>
-        </nav>
+          </nav>
 
         <!--Container principal-->
         <div class="container">
-            
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-9">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner" style="height: 500px;">
+                          <div class="carousel-item active">
+                            <img src="./static/WhatsApp Image 2023-07-21 at 22.39.22 (1).jpeg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./static/WhatsApp Image 2023-07-21 at 22.39.22.jpeg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./static/WhatsApp Image 2023-07-21 at 22.40.29 (1).jpeg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./static/WhatsApp Image 2023-07-21 at 22.40.29.jpeg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
         </div>
 
         <!--Imagem do background-->

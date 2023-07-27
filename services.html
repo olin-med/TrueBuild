@@ -15,14 +15,22 @@
         
         <!--Título-->
         <title>Main</title>
+
+        <style>
+          .nav-background {
+            background-image: url("./static/nav-bg.png");
+            background-size: cover;
+          }
+      </style>
     </head>
-    <body style="background: #f4f4f4">
+    <body style="background: #adada2">
         <!--NavBar-->
-        <nav class="navbar navbar-expand">
+        <nav class="navbar navbar-expand-md navbar-dark nav-background fixed-top">
+          <div class="container-fluid">
             <!--Logo-->
             <a
                 class="navbar-brand"
-                href="home.html"
+                href="index.html"
             >
                 <img
                 class="logo w-25 mt-2 ms-5"
@@ -31,14 +39,15 @@
                 style="width: 200px"
                 />
             </a>
-
-            <!--Botões da NavBar-->
-            <div class="collapse navbar-collapse justify-content-end">
-                <ul class="navbar-nav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+              <ul class="navbar-nav">
                 <!--Botão de Dados-->
                 <li class="nav-item me-5">
                     <button
-                    onclick="location.href='dados.html'"
+                    onclick="location.href='services.html'"
                     class="logo nav-link"
                     style="
                         font-style: normal;
@@ -89,7 +98,7 @@
                 <!--Botão de Home-->
                 <li class="nav-item me-5">
                     <button
-                    onclick="location.href='file:///C:/TrueBuild/aboutus.html'"
+                    onclick="location.href='aboutus.html'"
                     class="logo nav-link"
                     style="
                         font-style: normal;
@@ -104,11 +113,11 @@
                 </li>
                 </ul>
             </div>
+          </div>
         </nav>
 
-
-        <div class="album py-5">
-            <div class="container">
+        <div class="album py-5 mt-5">
+            <div class="container mt-5">
     
               <div class="row">
                 <div class="col-md-4">
@@ -230,9 +239,9 @@
 
             <footer class="bg-dark text-center text-white">
             <!-- Grid container -->
-            <div class="container p-4 pb-0">
+            <div class="container p-3 pb-3">
             <!-- Section: Social media -->
-            <section class="mb-4">
+            <section>
                 <!-- Email -->
                 <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
                 ><i class="bi bi-envelope"></i
@@ -243,22 +252,17 @@
                 ><i class="bi bi-instagram"></i
                 ></a>
 
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="bi bi-facebook"></i
+                ></a>
+
                 <!-- Whatsapp -->
                 <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
                 ><i class="bi bi-whatsapp"></i
                 ></a>
         
             </section>
-            <!-- Section: Social media -->
-            </div>
-            <!-- Grid container -->
-        
-            <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2023 Copyright:
-            <a class="text-white" href="https://truebuild.com/">TrueBuild.com</a>
-            </div>
-            <!-- Copyright -->
         </footer>
             
         <!--Imagem do background-->
